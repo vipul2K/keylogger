@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script>
+    function keyLog(){
+      var  k = document.getElementById("inp")
+      k.onkeypress = function(e)
+      {
+         document.getElementById("res").innerHTML = "Typed Key:  " + String.fromCharCode(e.keyCode) ;
+        }
+
+      }
+
+
+  </script>
+    <body onload="keyLog()">
+      Type Key: <input type="text" id="inp">
+      <p id="res"> </p>
+    </body>
+</html>
